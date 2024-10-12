@@ -1,0 +1,10 @@
+file_format: "1"
+id: blue
+name: BLUE
+type: shield
+url: https://github.com/omkbd/ErgoDash
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - blue

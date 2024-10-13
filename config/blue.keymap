@@ -21,31 +21,25 @@
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
                         bindings = <
-&kp  ESC      &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5       &kp  A              &kp  PSCRN    &kp  N6       &kp  N7       &kp  N8       &kp  N9       &kp  N0       &kp  MINUS
-&kp  GRAVE    &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T        &kp  LBKT           &kp  SQT      &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  EQUAL
-&kp  TAB      &kp  A        &kp  S        &kp  D        &kp  F        &kp  G        &kp  RBKT           &kp  SQT      &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  NUBS
-&kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  BSPC           &kp  DEL      &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
-&kp  LCTRL    &kp  LWIN     &mo  RAISE    &kp  LALT     &mo  LOWER    &mo  RAISE    &kp  SPACE          &kp  RET      &mo  RAISE    &mo  LOWER    &kp  RALT     &kp  K_APP    &kp  RWIN     &kp  RCTRL
+                                &kp  Q           &kp  W        &kp  E        &kp  R 
+                                &kp  A   &kp  S        &kp  D        &kp  F
+                                &mo  RAISE       &mo  LOWER    &kp  SPACE    &kp  RET 
                         >;
                 };
                 lower_layer {
 
                         bindings = <
-&kp  F11      &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &none                  &none         &kp  F6       &kp  F7       &kp  F8       &kp  F9       &kp  F10      &kp  F12
-&none         &none         &none         &none         &none         &none         &none                  &none         &none         &none         &none         &none         &none         &none
-&none         &none         &none         &none         &none         &none         &none                  &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none         &none
-&trans        &bootloader   &sys_reset    &none         &none         &none         &none                  &none         &none         &none         &none         &none         &none         &trans
-&trans        &none         &none         &trans        &trans        &none         &trans                 &trans        &none         &trans        &none         &none         &none         &trans
+                                &bootloader   &sys_reset    &none         &trans
+                                &none         &none         &none         &none 
+                                &none         &none         &none         &none 
                         >;
                 };
                 raise_layer {
 
                         bindings = <
-&none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none         &bt BT_CLR             &none         &none         &none         &none         &none         &none         &none
-&none         &none         &none         &none         &none         &none         &none                  &none         &none         &none         &none         &none         &none         &none
-&none         &none         &none         &none         &none         &none         &none                  &none         &none         &none         &none         &none         &none         &none
-&trans        &none         &none         &none         &none         &none         &none                  &none         &none         &none         &none         &bootloader   &sys_reset    &trans
-&trans        &none         &none         &trans        &trans        &none         &trans                 &trans        &none         &trans        &none         &none         &none         &trans
+                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+                                &bt BT_CLR         &none         &none         &none   
+                                &none         &none         &none         &none    
                         >;
                 };
         };
